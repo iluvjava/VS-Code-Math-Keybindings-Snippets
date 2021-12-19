@@ -1,0 +1,185 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "tab",
+        "command": "-insertSnippet",
+        "when": "editorTextFocus && hasSnippetCompletions && !editorTabMovesFocus && !inSnippetMode"
+    },
+    {
+        "key": "alt+space",
+        "command": "editor.action.showSnippets"
+    }, 
+
+    // Place your key bindings in this file to override the defaults
+
+    // Latex Style based keybindings.
+    {
+        "key": "ctrl+shift+B",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == latex && editorTextFocus",
+        "args": {
+            "snippet": "\\textbf{${TM_SELECTED_TEXT}$0}"
+        }
+    },
+    {
+        "key": "ctrl+shift+I",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == latex && editorTextFocus",  // chained clause
+        "args": {
+            "snippet": "\\textit{${TM_SELECTED_TEXT}$0}"
+        }
+    },
+
+    // Markdown Math: Maco
+    
+    { 
+        // Radical
+        "key": "cmd+enter 2",
+            "command": "editor.action.insertSnippet",
+            "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+            "args": {
+                "name": "sqrt"
+            }
+    },
+    {
+        "key": "cmd+enter /",
+            "command": "editor.action.insertSnippet",
+            "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+            "args": {
+                "name": "frac"
+            }
+    },
+    {
+        "key": "cmd+enter shift+[", 
+            "command": "editor.action.insertSnippet",
+            "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+            "args": {
+                "name": "bigbrace"
+            }
+    }, 
+    {
+        "key": "cmd+enter [", 
+            "command": "editor.action.insertSnippet",
+            "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+            "args": {
+                "name": "BigBracket"
+            }
+    }, 
+    {
+        "key": "cmd+enter 9", 
+            "command": "editor.action.insertSnippet",
+            "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+            "args": {
+                "name": "parenthesis"
+            }
+    },
+    
+    {
+        "key": "cmd+enter shift+\\", 
+            "command": "editor.action.insertSnippet",
+            "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+            "args": {
+                "name": "Vert"
+            }
+    }, 
+    //Markdown Math: Greek Letters ---------------------------------------------
+    {
+        "key": "cmd+enter l",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\lambda"
+        }
+    },
+    {
+        "key": "cmd+enter g",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\gamma"
+        }
+    },
+    {
+        "key": "cmd+enter b",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\beta"
+        }
+    },
+    {
+        "key": "cmd+enter a",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\alpha"
+        }
+    },
+    {
+        "key": "cmd+enter p",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\pi"
+        }
+    },
+    {
+        "key": "cmd+enter e",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\epsilon"
+        }
+    },
+    {
+        "key": "cmd+enter d",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\delta"
+        }
+    },
+
+    {
+        "key": "cmd+enter x",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\xi"
+        }
+    },
+    {
+        "key": "cmd+enter k",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\kappa"
+        }
+    },
+    {
+        "key": "cmd+enter m",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\mu"
+        }
+    },
+    {
+        "key": "cmd+enter r",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\rho"
+        }
+    },
+    {
+        "key": "cmd+enter z",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\zeta"
+        }
+    },
+    
+
+]

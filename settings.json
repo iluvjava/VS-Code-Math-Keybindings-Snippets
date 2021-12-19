@@ -1,0 +1,147 @@
+{
+  "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.largeFileOptimizations": false,
+    "editor.rulers": [
+
+        80,
+        120
+    ],
+    "editor.tokenColorCustomizations": {
+        "comments": "#229977",
+    },
+    // For Markdown, for snippet to work, disable words comments. 
+    "[markdown]": {
+      "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+      },
+      "editor.wordBasedSuggestions": false
+    },
+   
+    "java.semanticHighlighting.enabled": true,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "python.showStartPage": true,
+    "python.languageServer": "Default",
+    "python.terminal.activateEnvironment": false,
+    "workbench.editorAssociations": {
+      "*.pdf": "latex-workshop-pdf-hook",
+      "*.ipynb": "jupyter-notebook"
+    },
+    "terminal.integrated.commandsToSkipShell": [
+      "language-julia.interrupt"
+    ],
+    "julia.enableTelemetry": true,
+    "jupyter.askForKernelRestart": false,
+    "latex-workshop.view.pdf.viewer": "tab",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#f292c4", 
+        "statusBar.background": "#4e79cc", 
+        "window.activeBorder": "#E880B0",
+        "button.background": "#7DD0F1",
+        "editor.background": "#FFFFFF", //F5B7D0 #FFFFFF
+        "sideBar.background": "#eeeeee",
+        "titleBar.activeBackground": "#f292c4",
+        "titleBar.inactiveBackground": "#DD6FA4",
+        "editorGroupHeader.tabsBackground": "#DCF3FD",
+        "tab.activeBackground": "#FAF5AB", 
+        "tab.inactiveBackground": "#DCF3FD", 
+        
+        //terminal color to fit the background. 
+        "terminal.foreground": "#000000", 
+        "terminal.selectionBackground": "#ffffff", 
+        "terminal.ansiBrightGreen": "#0066ff", 
+        "terminal.ansiBrightWhite": "#ffffff"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.fontLigatures": true,
+    // Singature, settings not sync.
+    "settingsSync.ignoredSettings": [
+      "editor.fontFamily",
+      "terminal.integrated.fontFamily",
+      "python.pythonPath",
+    ],
+    "terminal.integrated.altClickMovesCursor": true,
+    "editor.fontSize": 12,
+    "markdown.preview.fontSize": 12,
+    "markdown.preview.scrollEditorWithPreview": false,
+    "workbench.editor.enablePreview": false,
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "git.suggestSmartCommit": false,
+    "remote.SSH.configFile": "C:\\Users\\victo\\.ssh\\config",
+    "markdown.preview.lineHeight": 1.5,
+    "markdown.extension.katex.macros": {
+        
+    },
+    "remote.SSH.remotePlatform": {
+      "klone.hyak.uw.edu": "linux"
+    },
+    "editor.mouseWheelZoom": true,
+    "notebook.cellToolbarLocation": {
+      "default": "right",
+      "jupyter-notebook": "left"
+    },
+    "workbench.colorTheme": "Visual Studio Light",
+    "cmake.configureOnOpen": true,
+    "C_Cpp.intelliSenseUpdateDelay": 1000,
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "julia.symbolCacheDownload": true,
+    "terminal.integrated.profiles.windows": 
+    {
+      "PowerShell": 
+      {
+        "source": "PowerShell",
+        "icon": "terminal-powershell"
+      },
+      "Command Prompt": 
+      {
+        "path": 
+        [
+
+          "${env:windir}\\Sysnative\\cmd.exe",
+          "${env:windir}\\System32\\cmd.exe"
+        ],
+        "args": [],
+        "icon": "terminal-cmd"
+      },
+      "Git Bash": 
+      {
+        "source": "Git Bash"
+      },
+      "Julia REPL": {
+        "path": "C:\\Users\\victo\\AppData\\Local\\Programs\\Julia-1.6.2\\bin\\julia.exe",
+        "args": []
+      }
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "terminal.integrated.allowChords": false,
+    "enableTelemetry": true,
+    "todo-tree.regex.enableMultiLine": true,
+    "files.autoSave": "afterDelay",
+    "todo-tree.general.tags": [
+      "BUG",
+      "HACK",
+      "FIXME",
+      "TODO",
+      "XXX",
+      "[ ]",
+      "[x]"
+    ],
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+    "markdown.preview.markEditorSelection": false,
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "markdown.trace": "verbose",
+    "julia.enableCrashReporter": true,
+    "editor.accessibilitySupport": "off",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.quickSuggestionsDelay": 5,
+    "julia.executablePath": "/Applications/Julia-1.7.app/Contents/Resources/julia/bin/julia",
+    "explorer.confirmDragAndDrop": false,
+    "markdown.extension.preview.autoShowPreviewToSide": true,
+}
