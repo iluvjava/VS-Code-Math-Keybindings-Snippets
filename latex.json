@@ -1,0 +1,410 @@
+{
+
+	"amath582": {
+		"prefix": ["amath582", "582"], 
+		"body": [
+		"\\documentclass{article}",
+		"",
+		"% If you're new to LaTeX, here's some short tutorials:",
+		"% https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes",
+		"% https://en.wikibooks.org/wiki/LaTeX/Basics",
+		"",
+		"% Formatting",
+		"\\usepackage[utf8]{inputenc}",
+		"\\usepackage[margin=1in]{geometry}",
+		"\\usepackage[titletoc,title]{appendix}",
+		"",
+		"% Math",
+		"% https://www.overleaf.com/learn/latex/Mathematical_expressions",
+		"% https://en.wikibooks.org/wiki/LaTeX/Mathematics",
+		"\\usepackage{amsmath,amsfonts,amssymb,mathtools}",
+		"",
+		"% Images",
+		"% https://www.overleaf.com/learn/latex/Inserting_Images",
+		"% https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions",
+		"\\usepackage{graphicx,float}",
+		"",
+		"% Tables",
+		"% https://www.overleaf.com/learn/latex/Tables",
+		"% https://en.wikibooks.org/wiki/LaTeX/Tables",
+		"",
+		"% Algorithms",
+		"% https://www.overleaf.com/learn/latex/algorithms",
+		"% https://en.wikibooks.org/wiki/LaTeX/Algorithms",
+		"\\usepackage[ruled,vlined]{algorithm2e}",
+		"\\usepackage{algorithmic}",
+		"",
+		"% Code syntax highlighting",
+		"% https://www.overleaf.com/learn/latex/Code_Highlighting_with_minted",
+		"% \\usepackage{minted}",
+		"%\\usemintedstyle{borland}",
+		"",
+		"% References",
+		"% https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX",
+		"% https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management",
+		"\\usepackage{biblatex}",
+		"\\addbibresource{references.bib}",
+		"",
+		"\\usepackage{hyperref}",
+		"\\hypersetup{",
+		"    colorlinks=true,",
+		"    linkcolor=blue,",
+		"    filecolor=magenta,      ",
+		"    urlcolor=cyan,",
+		"}",
+		"",
+		"% Title content",
+		"\\title{TITLE}",
+		"\\author{Hongda Li}",
+		"\\date{\\today}",
+		"",
+		"\\begin{document}",
+		"",
+		"\\maketitle",
+		"",
+		"% Abstract",
+		"\\begin{abstract}",
+		"   ...",
+		"\\end{abstract}",
+		"",
+		"",
+		"\\section{Introduction and Overview}",
+		"",
+		"",
+		"\\section{Theoretical Background}",
+		"",
+		"",
+		"\\section{Algorithm Implementation and Development}",
+		"",
+		"",
+		"\\section{Computational Results}",
+		"    ",
+		"",
+		"\\section{Summary and Conclusions}",
+		"   ",
+		"% References",
+		"\\printbibliography",
+		"",
+		"% Appendices",
+		"\\begin{appendices}",
+		"",
+		"\\section{MATLAB Functions}",
+		"",
+		"\\end{appendices}",
+		"",
+		"\\end{document}",
+		""
+		],
+		"description": "AMATH 582 Template"
+	},
+
+	"latex math starter tamplate": {
+		"prefix": "latex",
+		"body": [
+		"\\documentclass[]{article}",
+		"\\usepackage{amsmath}\\usepackage{amsfonts}",
+		"\\usepackage[margin=1in,footskip=0.25in]{geometry}",
+		"\\usepackage{mathtools}",
+		"\\usepackage{hyperref}",
+		"\\hypersetup{",
+		"    colorlinks=true,",
+		"    linkcolor=blue,",
+		"    filecolor=magenta,",
+		"    urlcolor=cyan,",
+		"}",
+		"\\usepackage[final]{graphicx}",
+		"\\usepackage{listings}",
+		"\\usepackage{courier}",
+		"\\lstset{basicstyle=\\footnotesize\\ttfamily,breaklines=true}",
+		"\\newcommand{\\indep}{\\perp \\!\\!\\! \\perp}",
+		"% \\usepackage{wrapfig}",
+		"\\graphicspath{{.}}",
+		"",
+		"\\begin{document}",
+		"\\end{document}",
+		""
+	],
+		"description": "latex math, starter template"
+	},
+
+	
+
+	"align": {
+		"prefix": ["ali", "alig", "align"], 
+		"body": ["\\begin{align*}\\tag{$1}\\label{eqn:$1}", "$2 &", "\\end{align*}"],
+		"description": "Aligning list of expression, equations."
+	},
+	
+	"algo": {
+		"prefix": ["alg", "algo", "algorithm"], 
+		"body": [
+			"\\begin{algorithm}\\label{alg:$1}", 
+			"\\begin{algorithmic}[1]",
+			"\\STATE{\\textbf{Input: } $3}", 
+			"\\end{algorithmic}\\caption{$2}",
+			"\\end{algorithm}"
+		],
+		"description": "Algorithm block, with caption"
+	}, 
+	
+	"eqn":{
+		"prefix":["eqn", "eq"], 
+		"body": [
+			"\\begin{equation*}\\tag{$1}\\label{eqn:$1}",
+			"\\end{equation*}"
+		], 
+		"description": "Tex equation with lable and tag."
+	}, 
+	
+	"enum": {
+		"prefix":["enum"], 
+		"body": ["\\begin{enumerate}", "\\item[1.] $1","\\end{enumerate}"],
+		"description": "Latex lists"
+	},
+	
+	
+	"fig": {
+		"prefix": ["fig", "figure"], 
+		"body": [
+			"\\begin{figure}[h]", 
+			"\\centering",
+			"\\includegraphics*[width=0.7\\linewidth]{$1}",
+			"\\caption{$2}",
+			"\\label{$3}",
+			"\\end{figure}"
+		], 
+		"description": "Latex float figure"
+	}, 
+
+	
+	"matrix": {
+		"prefix": ["matrix"], 
+		"body": [
+			"\\begin{bmatrix}", 
+			"& & $1 \\\\", 
+			"\\end{bmatrix}", 
+		], 
+		"description": "Bmatrix block"
+	}, 
+	
+	"sum": {
+		"prefix": ["sum"],
+		"body": [
+			"\\sum_{$1}^{$2}\\left($3\\right)"
+		], 
+		"description": "Latex sum"
+	}, 
+	
+	"int": {
+		"prefix": ["int"], 
+		"body": [
+			"\\int_{$1}^{$2} d$3"
+		], 
+		"description": "Latex Integral"
+	}, 
+	
+	"prod": {
+		"prefix": ["prod"], 
+		"body": ["\\prod_{$1}^{$2} \\left($3\\right)"], 
+		"description": "latex Product"
+	},
+	
+	"frac": {
+		"prefix": ["frac"], 
+		"body": ["\\frac{$1${TM_SELECTED_TEXT}}{$2}"],
+		"description": "Latex Fraction"
+	},
+	
+	"vert": {
+		"prefix": ["vert"], 
+		"body": ["\\Vert $0${TM_SELECTED_TEXT}\\Vert"],
+		"description": "Latex Double Vert"
+	}, 
+
+	"Vert": {
+		"prefix": ["Vert"],
+		"body": ["\\left\\Vert", 
+				"\t $1${TM_SELECTED_TEXT}", 
+				"\\right\\Vert"], 
+		"description": "Big, Vert"
+	},
+
+	"left": {
+		"prefix": ["lef", "left"], 
+		"body": ["\\left$1${TM_SELECTED_TEXT}\\right$2"], 
+		"description": "Left Big Enclosure"
+	},
+	
+	"parenthesis": {
+		"prefix": ["paren", "parenthesis", "("], 
+		"body": ["\\left(", "\t$0${TM_SELECTED_TEXT}", "\\right)"], 
+		"description": "Tex Big parentheis"
+	}, 
+
+	"bigbrace": {
+		"prefix": ["Brace", "bigbrace"], 
+		"body": ["\\left\\lbrace", "\t$1", "\\right\\rbrace"], 
+		"description": "Big Latex Brace"
+	},
+	
+	"BigBracket": {
+		"prefix": ["Brack", "bigbrack"], 
+		"body": ["\\left[", "\t$1", "\\right]"], 
+		"description": "Big Latex bracket"
+	},
+
+	"text": {
+		"prefix": ["te", "text"], 
+		"body": ["\\text{$0}"], 
+		"description": ["Latex inline text block"]
+	},
+	
+	"textbf":{
+		"prefix": ["textbf", "bf"], 
+		"body": ["\\textbf{$1}"], 
+		"description": ["Latex Textbf"]
+	},
+	
+		
+	"langle": {
+		"prefix": ["lan", "langle"], 
+		"body": ["\\left\\langle $1${TM_SELECTED_TEXT} \\right\\rangle"], 
+		"description": "inner product angle."
+	},
+	
+	"math": {
+		"prefix": ["math"], 
+		"body": ["$$", "$1", "$$"], 
+		"description": "math mode"
+	}, 
+	
+	"widehat": {
+		"prefix": ["what"], 
+		"body": ["\\widehat{$1}"], 
+		"description": "latex hat"
+	}, 
+
+	"hat": {
+		"prefix": ["hat"], 
+		"body": ["\\hat{${TM_SELECTED_TEXT}}"], 
+		"description": "latex hat"
+	}, 
+	
+	"tilde": {
+		"prefix": ["tilde", "til"],
+		"body": ["\\widetilde{$1}"], 
+		"description": "Latex Tilde"
+	},
+
+	"argmin": {
+		"prefix": ["argmin"], 
+		"body": ["\\underset{$1}{\\text{argmin}}"],
+		"description": "Argmin Operator."
+
+	},
+
+	"proj": {
+		"prefix": ["proj"], 
+		"body": ["\\underset{$1}{\\text{proj}}"],
+		"description": "Projection operator."
+	},
+
+	"under": {
+		"prefix": ["under"], 
+		"body": ["\\underset{$1${TM_SELECTED_TEXT}}{\\text{$2}}"], 
+		"description": "Custom Operator with underset. "
+	}, 
+
+	"underbrace":{
+		"prefix": ["underb"], 
+		"body": ["\\underbrace{${TM_SELECTED_TEXT}}_{$1}"], 
+		"description": "Undder Brace Marking for selected elements" 
+	},
+
+	"angle": {
+		"prefix": ["angle"], 
+		"body": ["\\langle $1${TM_SELECTED_TEXT}\\rangle"], 
+		"description": "LR angle, Inner Produce and such"
+	},
+
+
+	"sqrt": {
+		"prefix": ["sq","sqr","sqrt"], 
+		"body": "\\sqrt{$1}", 
+		"description": "Square root"
+	}, 
+	
+	"variance": {
+		"prefix": ["var", "variance"],
+		"body": "\\text{Var}\\left[$1\\right]", 
+		"description": "Variance random variable"
+	}, 
+
+	"expected value": {
+		"prefix": ["expe", "expect"], 
+		"body": "\\mathbb{E}\\left[$1\\right]",
+		"description": "Expected value of random variable"
+	},
+
+	"Exponential": {
+		"prefix": "exp",
+		"body": [
+			"\\exp \\left(",
+			"$1${TM_SELECTED_TEXT}",
+			"\\right)"
+		],
+		"description": "Exponential"
+	},
+
+	"Fourier": {
+		"prefix": ["f", "four", "fourier"], 
+		"body": "\\mathcal{F}",
+		"description": "Fourier Transform"
+	}, 
+
+	"probability": {
+		"prefix": ["prob", "probability"], 
+		"body": "\\mathbb{P}\\left($1\\right)", 
+		"description": "Probability of observing events."
+	}, 
+	
+	"Laplace Transform or Lagrangian": {
+		"prefix": ["l", "laplace"],
+		"body": "\\mathcal{L}", 
+		"description": "Laplace Transform"
+	},
+
+	"Reals": {
+		"prefix": ["real", "reals"], 
+		"body": "\\mathbb{R}",
+		"description": "The real set."
+	}, 
+	
+	"Integers": {
+		"prefix": ["z", "integers"], 
+		"body": "\\mathbb{Z}",
+		"description": "The integer set."
+	},
+
+	"inf": {
+		"prefix": ["inf"], 
+		"body": "\\infty", 
+		"description": "infinity"
+	}, 
+
+	"cov": {
+		"prefix": ["cov", "covariance"], 
+		"body": "\\text{Cov}\\left($1,$2\\right)", 
+		"description": "Covariance of 2 random variables. "
+	},
+
+	
+	"aligned": {
+		"prefix": ["aligned", "alig"],
+		"body": [   "\\begin{aligned}",
+					"$1${TM_SELECTED_TEXT}", 
+					"\\end{aligned}"
+				],
+		"description": "Algined block"
+	}
+}
