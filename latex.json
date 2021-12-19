@@ -182,7 +182,7 @@
 		"body": [
 			"\\begin{bmatrix}", 
 			"& & $1 \\\\", 
-			"\\end{bmatrix}", 
+			"\\end{bmatrix}"
 		], 
 		"description": "Bmatrix block"
 	}, 
