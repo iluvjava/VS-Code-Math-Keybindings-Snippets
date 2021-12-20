@@ -82,6 +82,31 @@
                 "name": "Vert"
             }
     }, 
+    {
+        "key": "cmd+enter \\", 
+            "command": "editor.action.insertSnippet",
+            "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+            "args": {
+                "name": "vert"
+            }
+    }, 
+    {
+        "key": "cmd+enter shift+,", 
+            "command": "editor.action.insertSnippet",
+            "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+            "args": {
+                "name": "langle"
+            }
+    }, 
+    {
+        "key": "cmd+enter ,", 
+            "command": "editor.action.insertSnippet",
+            "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+            "args": {
+                "snippet": "\\langle ${TM_SELECTED_TEXT}$0\\rangle"
+            }
+    }, 
+
     //Markdown Math: Greek Letters ---------------------------------------------
     {
         "key": "cmd+enter l",
@@ -178,6 +203,14 @@
         "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
         "args": {
             "snippet": "\\zeta"
+        }
+    },
+    {
+        "key": "cmd+enter t",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\tau"
         }
     },
     
