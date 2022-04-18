@@ -1,0 +1,347 @@
+{
+    "BigBracket": {
+        "body": [
+            "\\left[",
+            "\t$1",
+            "\\right]"
+        ],
+        "description": "Big Latex bracket",
+        "prefix": [
+            "Brack",
+            "bigbrack"
+        ]
+    },
+    "Exponential": {
+        "body": [
+            "\\exp \\left(",
+            "$1${TM_SELECTED_TEXT}",
+            "\\right)"
+        ],
+        "description": "Exponential",
+        "prefix": "exp"
+    },
+    "Fourier": {
+        "body": "\\mathcal{F}",
+        "description": "Fourier Transform",
+        "prefix": [
+            "f",
+            "four",
+            "fourier"
+        ]
+    },
+    "Integers": {
+        "body": "\\mathbb{Z}",
+        "description": "The integer set.",
+        "prefix": [
+            "z",
+            "integers"
+        ]
+    },
+    "Laplace Transform or Lagrangian": {
+        "body": "\\mathcal{L}",
+        "description": "Laplace Transform",
+        "prefix": [
+            "l",
+            "laplace"
+        ]
+    },
+    "Reals": {
+        "body": "\\mathbb{R}",
+        "description": "The real set.",
+        "prefix": [
+            "real",
+            "reals"
+        ]
+    },
+    "Vert": {
+        "body": [
+            "\\left\\Vert",
+            "\t $1${TM_SELECTED_TEXT}",
+            "\\right\\Vert"
+        ],
+        "description": "Big, Vert",
+        "prefix": [
+            "Vert"
+        ]
+    },
+
+    "aligned": {
+        "body": [
+            "\\begin{aligned}",
+            "$1${TM_SELECTED_TEXT}",
+            "\\end{aligned}"
+        ],
+        "description": "Algined block",
+        "prefix": [
+            "aligned",
+            "alig"
+        ]
+    },
+    "angle": {
+        "body": [
+            "\\langle $1 ${TM_SELECTED_TEXT}\\rangle"
+        ],
+        "description": "LR angle, Inner Produce and such",
+        "prefix": [
+            "angle"
+        ]
+    },
+    "argmin": {
+        "body": [
+            "\\underset{$1}{\\text{argmin}}"
+        ],
+        "description": "Argmin Operator.",
+        "prefix": [
+            "argmin"
+        ]
+    },
+    "bigbrace": {
+        "body": [
+            "\\left\\lbrace",
+            "\t$1",
+            "\\right\\rbrace"
+        ],
+        "description": "Big Latex Brace",
+        "prefix": [
+            "Brace",
+            "bigbrace"
+        ]
+    },
+    "cov": {
+        "body": "\\text{Cov}\\left($1,$2\\right)",
+        "description": "Covariance of 2 random variables. ",
+        "prefix": [
+            "cov",
+            "covariance"
+        ]
+    },
+    "expected value": {
+        "body": "\\mathbb{E}\\left[$1\\right]",
+        "description": "Expected value of random variable",
+        "prefix": [
+            "expe",
+            "expect"
+        ]
+    },
+    "frac": {
+        "body": [
+            "\\frac{$1${TM_SELECTED_TEXT}}{$2}"
+        ],
+        "description": "Latex Fraction",
+        "prefix": [
+            "frac"
+        ]
+    },
+    "hat": {
+        "body": [
+            "\\hat{${TM_SELECTED_TEXT}}"
+        ],
+        "description": "latex hat",
+        "prefix": [
+            "hat"
+        ]
+    },
+    "inf": {
+        "body": "\\infty",
+        "description": "infinity",
+        "prefix": [
+            "inf"
+        ]
+    },
+    "int": {
+        "body": [
+            "\\int_{$1}^{$2} d$3"
+        ],
+        "description": "Latex Integral",
+        "prefix": [
+            "int"
+        ]
+    },
+    "langle": {
+        "body": [
+            "\\left\\langle $1${TM_SELECTED_TEXT} \\right\\rangle"
+        ],
+        "description": "inner product angle.",
+        "prefix": [
+            "lan",
+            "langle"
+        ]
+    },
+    "left": {
+        "body": [
+            "\\left$1${TM_SELECTED_TEXT}\\right$2"
+        ],
+        "description": "Left Big Enclosure",
+        "prefix": [
+            "lef",
+            "left"
+        ]
+    },
+    "math": {
+        "body": [
+            "$$",
+            "$1",
+            "$$"
+        ],
+        "description": "math mode",
+        "prefix": [
+            "math"
+        ]
+    },
+    "matrix": {
+        "body": [
+            "\\begin{bmatrix}",
+            "& & $1 \\\\",
+            "\\end{bmatrix}"
+        ],
+        "description": "Bmatrix block",
+        "prefix": [
+            "matrix"
+        ]
+    },
+    "overline": {
+        "body": [
+            "\\overline{${TM_SELECTED_TEXT}${1}}"
+        ],
+        "description": "Latex Overline",
+        "prefix": [
+            "over",
+            "overline"
+        ]
+    },
+    "parenthesis": {
+        "body": [
+            "\\left(",
+            "\t$0${TM_SELECTED_TEXT}",
+            "\\right)"
+        ],
+        "description": "Tex Big parentheis",
+        "prefix": [
+            "paren",
+            "parenthesis",
+            "("
+        ]
+    },
+    "probability": {
+        "body": "\\mathbb{P}\\left($1\\right)",
+        "description": "Probability of observing events.",
+        "prefix": [
+            "prob",
+            "probability"
+        ]
+    },
+    "prod": {
+        "body": [
+            "\\prod_{$1}^{$2} \\left($3\\right)"
+        ],
+        "description": "latex Product",
+        "prefix": [
+            "prod"
+        ]
+    },
+    "proj": {
+        "body": [
+            "\\underset{$1}{\\text{proj}}"
+        ],
+        "description": "Projection operator.",
+        "prefix": [
+            "proj"
+        ]
+    },
+    "sqrt": {
+        "body": "\\sqrt{$1}",
+        "description": "Square root",
+        "prefix": [
+            "sq",
+            "sqr",
+            "sqrt"
+        ]
+    },
+    "sum": {
+        "body": [
+            "\\sum_{$1}^{$2}\\left($3\\right)"
+        ],
+        "description": "Latex sum",
+        "prefix": [
+            "sum"
+        ]
+    },
+    "text": {
+        "body": [
+            "\\text{$0}"
+        ],
+        "description": [
+            "Latex inline text block"
+        ],
+        "prefix": [
+            "te",
+            "text"
+        ]
+    },
+    "textbf": {
+        "body": [
+            "\\textbf{$1}"
+        ],
+        "description": [
+            "Latex Textbf"
+        ],
+        "prefix": [
+            "textbf",
+            "bf"
+        ]
+    },
+    "tilde": {
+        "body": [
+            "\\widetilde{$1}"
+        ],
+        "description": "Latex Tilde",
+        "prefix": [
+            "tilde",
+            "til"
+        ]
+    },
+    "under": {
+        "body": [
+            "\\underset{$1${TM_SELECTED_TEXT}}{\\text{$2}}"
+        ],
+        "description": "Custom Operator with underset. ",
+        "prefix": [
+            "under"
+        ]
+    },
+    "underbrace": {
+        "body": [
+            "\\underbrace{${TM_SELECTED_TEXT}}_{$1}"
+        ],
+        "description": "Undder Brace Marking for selected elements",
+        "prefix": [
+            "underb"
+        ]
+    },
+    "variance": {
+        "body": "\\text{Var}\\left[$1\\right]",
+        "description": "Variance random variable",
+        "prefix": [
+            "var",
+            "variance"
+        ]
+    },
+    "vert": {
+        "body": [
+            "\\Vert $0${TM_SELECTED_TEXT}\\Vert"
+        ],
+        "description": "Latex Double Vert",
+        "prefix": [
+            "vert"
+        ]
+    },
+    "widehat": {
+        "body": [
+            "\\widehat{$1}"
+        ],
+        "description": "latex hat",
+        "prefix": [
+            "what"
+        ]
+    }
+}
