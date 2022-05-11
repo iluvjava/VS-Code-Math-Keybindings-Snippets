@@ -79,10 +79,11 @@
             "algorithm"
         ]
     },
+    
     "align": {
         "body": [
-            "\\begin{align*}\\tag{$1}\\label{eqn:$1}",
-            "$2 &",
+            "\\begin{align*}",
+            "   $1${TM_SELECTED_TEXT}",
             "\\end{align*}"
         ],
         "description": "Aligning list of expression, equations.",
@@ -92,16 +93,16 @@
             "align"
         ]
     },
+    
     "aligned": {
         "body": [
             "\\begin{aligned}",
-            "$1${TM_SELECTED_TEXT}",
+            "   $1${TM_SELECTED_TEXT}",
             "\\end{aligned}"
         ],
         "description": "Algined block",
         "prefix": [
-            "aligned",
-            "alig"
+            "aligned"
         ]
     },
     "amath582": {
@@ -482,6 +483,16 @@
         "prefix": [
             "math"
         ]
+    },
+    "mathbb": {
+        "body": "\\mathbb",
+        "description": "mathbb mode",
+        "prefix": "bb"
+    },
+    "mathcal": {
+        "body": "\\mathcal",
+        "description": "mathcal mode",
+        "prefix": "cal"
     },
     "matrix": {
         "body": [

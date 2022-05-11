@@ -64,7 +64,7 @@
             "Vert"
         ]
     },
-
+    
     "aligned": {
         "body": [
             "\\begin{aligned}",
@@ -187,6 +187,16 @@
         "prefix": [
             "math"
         ]
+    },
+    "mathbb": {
+        "body": "\\mathbb",
+        "description": "mathbb mode",
+        "prefix": "bb"
+    },
+    "mathcal": {
+        "body": "\\mathcal",
+        "description": "mathcal mode",
+        "prefix": "cal"
     },
     "matrix": {
         "body": [
@@ -318,6 +328,7 @@
             "underb"
         ]
     },
+    
     "variance": {
         "body": "\\text{Var}\\left[$1\\right]",
         "description": "Variance random variable",
