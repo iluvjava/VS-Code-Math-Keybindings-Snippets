@@ -64,7 +64,7 @@
             "Vert"
         ]
     },
-    
+    // Env
     "aligned": {
         "body": [
             "\\begin{aligned}",
@@ -169,7 +169,7 @@
     },
     "left": {
         "body": [
-            "\\left$1${TM_SELECTED_TEXT}\\right$2"
+            "\\left${TM_SELECTED_TEXT}\\right$2"
         ],
         "description": "Left Big Enclosure",
         "prefix": [
@@ -193,11 +193,17 @@
         "description": "mathbb mode",
         "prefix": "bb"
     },
+    "mathbf": {
+        "body": "\\mathbf",
+        "description": "mathbf mode",
+        "prefix": "bf"
+    },
     "mathcal": {
         "body": "\\mathcal",
         "description": "mathcal mode",
         "prefix": "cal"
     },
+    // Genearl mathematics.
     "matrix": {
         "body": [
             "\\begin{bmatrix}",
@@ -211,7 +217,7 @@
     },
     "overline": {
         "body": [
-            "\\overline{${TM_SELECTED_TEXT}${1}}"
+            "\\overline{${TM_SELECTED_TEXT}$0}"
         ],
         "description": "Latex Overline",
         "prefix": [
@@ -269,7 +275,7 @@
     },
     "sum": {
         "body": [
-            "\\sum_{$1}^{$2}\\left($3\\right)"
+            "\\sum_{$1}^{$2}$3"
         ],
         "description": "Latex sum",
         "prefix": [
@@ -321,14 +327,14 @@
     },
     "underbrace": {
         "body": [
-            "\\underbrace{${TM_SELECTED_TEXT}}_{$1}"
+            "\\underbrace{$1${TM_SELECTED_TEXT}}_{$2}"
         ],
         "description": "Undder Brace Marking for selected elements",
         "prefix": [
             "underb"
         ]
     },
-    
+    // Somewhat Stats relevant:
     "variance": {
         "body": "\\text{Var}\\left[$1\\right]",
         "description": "Variance random variable",

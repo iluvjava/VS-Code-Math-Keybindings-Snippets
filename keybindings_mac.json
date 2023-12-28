@@ -1,5 +1,6 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
+    // Show and select snippets
     {
         "key": "tab",
         "command": "-insertSnippet",
@@ -12,7 +13,7 @@
 
     // Place your key bindings in this file to override the defaults
 
-    // Latex Style based keybindings.
+    // Latex Style based keybindings:
     {
         "key": "ctrl+shift+B",
         "command": "editor.action.insertSnippet",
@@ -30,8 +31,8 @@
         }
     },
 
-    // Markdown Math: Maco
-    
+
+    // Markdown Math and Latex Math keyboard shortcut: 
     { 
         // Radical
         "key": "cmd+enter 2",
@@ -106,6 +107,23 @@
                 "snippet": "\\langle ${TM_SELECTED_TEXT}$0\\rangle"
             }
     }, 
+    {
+        "key": "cmd+enter -", 
+            "command": "editor.action.insertSnippet",
+            "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+            "args": {
+                "name": "overline"
+            }
+    }, 
+    {
+        "key": "cmd+enter shift+-", 
+            "command": "editor.action.insertSnippet",
+            "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+            "args": {
+                "name": "underline"
+            }
+    },
+    
 
     //Markdown Math: Greek Letters ---------------------------------------------
     {
@@ -146,6 +164,14 @@
         "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
         "args": {
             "snippet": "\\pi"
+        }
+    },
+    {
+        "key": "cmd+enter shift+p",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\Pi"
         }
     },
     {
@@ -213,6 +239,46 @@
             "snippet": "\\tau"
         }
     },
+    {
+        "key": "cmd+enter s",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\sigma"
+        }
+    },
+    {
+        "key": "cmd+enter o",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\omega"
+        }
+    },
+    {
+        "key": "cmd+enter shift+s",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\Sigma"
+        }
+    },
+    {
+        "key": "cmd+enter shift+O",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'markdown' && editorTextFocus || editorTextFocus && editorLangId == 'latex'",
+        "args": {
+            "snippet": "\\Omega"
+        }
+    },
+
+
+    // NOT MATH TYPESET RELATED. 
+    {
+        "key": "escape",
+        "command": "-language-julia.clearCurrentInlineResult",
+        "when": "editorLangId == 'juliamarkdown' || editorLangId == 'markdown' || editorTextFocus && juliaHasInlineResult && !editorHasSelection && !findWidgetVisible && !inSnippetMode && !isInEmbeddedEditor && !markerNavigationVisible && !onTypeRenameInputVisible && !parameterHintsVisible && !renameInputVisible && !suggestWidgetVisible && editorLangId == 'julia'"
+    }
     
 
 ]

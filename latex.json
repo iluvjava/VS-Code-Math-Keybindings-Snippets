@@ -155,6 +155,7 @@
         ],
         "description": "report with abstract "
       },
+    // BEAMER LATEX TEMPLATE!
     "beamer": {
         "prefix": "beamer",
         "body": [
@@ -371,7 +372,7 @@
             "algorithm"
         ]
     },
-    
+    // Structure ----------------------------------------------------------------
     "align": {
         "body": [
             "\\begin{align*}",
@@ -385,7 +386,7 @@
             "align"
         ]
     },
-    
+    //env
     "aligned": {
         "body": [
             "\\begin{aligned}",
@@ -397,6 +398,20 @@
             "aligned"
         ]
     },
+    // Place your snippets for tex here. Each snippet is defined under a snippet name and has a prefix, body and 
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    // same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+    // ##-----------------------------------------------------------------------
     "amath582": {
         "body": [
             "\\documentclass{article}",
@@ -519,7 +534,7 @@
     "bigbrace": {
         "body": [
             "\\left\\lbrace",
-            "\t$1",
+            "   $1${TM_SELECTED_TEXT}",
             "\\right\\rbrace"
         ],
         "description": "Big Latex Brace",
@@ -675,12 +690,21 @@
     },
     "overline": {
         "body": [
-            "\\overline{${TM_SELECTED_TEXT}${1}}"
+            "\\overline{$0${TM_SELECTED_TEXT}}"
         ],
         "description": "Latex Overline",
         "prefix": [
             "over",
             "overline"
+        ]
+    },
+    "underline":{
+        "body": [
+            "\\underline{$1${TM_SELECTED_TEXT}}"
+        ], 
+        "description": "Latex Underline",
+        "prefix": [
+            "underl", "underline"
         ]
     },
     "parenthesis": {
@@ -697,7 +721,7 @@
         ]
     },
     "probability": {
-        "body": "\\mathbb{P}\\left($1\\right)",
+        "body": "\\mathbb{P}\\left($1${TM_SELECTED_TEXT}\\right)",
         "description": "Probability of observing events.",
         "prefix": [
             "prob",
@@ -723,7 +747,7 @@
         ]
     },
     "sqrt": {
-        "body": "\\sqrt{$1}",
+        "body": "\\sqrt{$1${TM_SELECTED_TEXT}}",
         "description": "Square root",
         "prefix": [
             "sq",
@@ -733,7 +757,7 @@
     },
     "sum": {
         "body": [
-            "\\sum_{$1}^{$2}\\left($3\\right)"
+            "\\sum_{$1}^{$2}$3"
         ],
         "description": "Latex sum",
         "prefix": [
@@ -754,7 +778,7 @@
     },
     "textbf": {
         "body": [
-            "\\textbf{$1}"
+            "\\textbf{${TM_SELECTED_TEXT}}"
         ],
         "description": [
             "Latex Textbf"
@@ -776,7 +800,7 @@
     },
     "under": {
         "body": [
-            "\\underset{$1${TM_SELECTED_TEXT}}{\\text{$2}}"
+            "\\underset{$0${TM_SELECTED_TEXT}}{\\text{$1}}"
         ],
         "description": "Custom Operator with underset. ",
         "prefix": [
@@ -785,7 +809,7 @@
     },
     "underbrace": {
         "body": [
-            "\\underbrace{${TM_SELECTED_TEXT}}_{$1}"
+            "\\underbrace{${TM_SELECTED_TEXT}}_{$0}"
         ],
         "description": "Undder Brace Marking for selected elements",
         "prefix": [
@@ -827,5 +851,21 @@
         "prefix": [
             "ll", "llb"
         ]
+    }, 
+    "delta equal": {
+        "body": [
+            "\\overset{\\Delta}{=}",
+        ], 
+        "description": "Delta equal sign", 
+        "prefix": [
+            "deq",
+        ]
+    },
+    "prox": {
+        "body" :[
+            "\\underset{$0${TM_SELECTED_TEXT}}{\\text{prox}}"
+        ],
+        "description": "Proximal Operator of function f", 
+        "prefix": "prox"
     }
 }
